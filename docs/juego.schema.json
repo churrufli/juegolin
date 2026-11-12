@@ -1,0 +1,375 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "juegolin/juego.schema.json",
+  "title": "Juego de Juegolín",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "nombre",
+    "alias",
+    "seccion",
+    "resumen",
+    "edades",
+    "entorno",
+    "espacio",
+    "terreno",
+    "soloEnCoche",
+    "intensidad",
+    "destrezas",
+    "materiales",
+    "materialesDetalle",
+    "participantes",
+    "grupo",
+    "organizacion",
+    "duracion",
+    "ruido",
+    "dificultad",
+    "habilidades",
+    "colecciones",
+    "origen",
+    "pasos",
+    "variantes",
+    "herramientas",
+    "requiereAdulto",
+    "seguridad"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "nombre": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "seccion": {
+      "description": "Familia del juego en el catálogo; no es un filtro.",
+      "enum": [
+        "presentacion",
+        "tradicionales",
+        "acecho",
+        "grandes-juegos",
+        "nocturnos",
+        "agilidad",
+        "viaje",
+        "tranquilos"
+      ]
+    },
+    "resumen": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "edades": {
+      "description": "Filtro 1. 'familia' = multiedad / para toda la familia.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "3-5",
+          "6-8",
+          "9-12",
+          "familia"
+        ]
+      }
+    },
+    "entorno": {
+      "description": "Filtro 2a.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "exterior",
+          "interior"
+        ]
+      }
+    },
+    "espacio": {
+      "description": "Filtro 2b. Si vale en los dos, se ponen ambos.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "reducido",
+          "amplio"
+        ]
+      }
+    },
+    "terreno": {
+      "type": "string",
+      "description": "Texto libre de la guía sobre el suelo o lugar."
+    },
+    "soloEnCoche": {
+      "type": "boolean",
+      "description": "true solo si hace falta ir en coche (o tren o autobús) para jugar. La app enseña el icono de coche solo en estos juegos."
+    },
+    "intensidad": {
+      "description": "Filtro 3a.",
+      "enum": [
+        "alta",
+        "moderada",
+        "calma"
+      ]
+    },
+    "destrezas": {
+      "description": "Filtro 3b: fuerza, puntería o equilibrio. Vacío si no aplica.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "fuerza",
+          "punteria",
+          "equilibrio"
+        ]
+      }
+    },
+    "materiales": {
+      "description": "Filtro 4. ['ninguno'] si solo hace falta el cuerpo.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ninguno",
+          "tiza",
+          "cuerda",
+          "chapas",
+          "pelota",
+          "panuelo",
+          "sacos",
+          "latas",
+          "piedra",
+          "saquitos",
+          "linterna",
+          "mapa",
+          "brujula",
+          "silbato",
+          "cintas",
+          "banderas",
+          "palos",
+          "tarjetas",
+          "cuaderno",
+          "reflectantes",
+          "papel",
+          "aro",
+          "bolos",
+          "canicas",
+          "globos",
+          "sillas",
+          "musica",
+          "goma",
+          "peonza",
+          "monedas",
+          "objetos"
+        ]
+      }
+    },
+    "materialesDetalle": {
+      "type": "string"
+    },
+    "participantes": {
+      "description": "Rango numérico; max null = sin límite.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "nota": {
+          "type": "string"
+        }
+      }
+    },
+    "grupo": {
+      "description": "Filtro 5a (derivado de participantes).",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "individual-parejas",
+          "pequeno",
+          "grande"
+        ]
+      }
+    },
+    "organizacion": {
+      "description": "Filtro 5b. 'cooperativo' es añadido: todos juntos sin rival.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "todos-contra-todos",
+          "equipos",
+          "todos-contra-uno",
+          "cooperativo"
+        ]
+      }
+    },
+    "duracion": {
+      "description": "Filtro 6: expres < 5 min, media 5-15, larga > 15.",
+      "enum": [
+        "expres",
+        "media",
+        "larga"
+      ]
+    },
+    "ruido": {
+      "description": "Filtro 7.",
+      "enum": [
+        "silencioso",
+        "medio",
+        "ruidoso"
+      ]
+    },
+    "dificultad": {
+      "description": "Filtro 8.",
+      "enum": [
+        "muy-facil",
+        "intermedia",
+        "estrategica"
+      ]
+    },
+    "habilidades": {
+      "description": "Filtro 9. 'coordinacion' y 'atencion' son añadidas a las 4 de la spec.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "cooperacion",
+          "reflejos",
+          "estrategia",
+          "expresion",
+          "coordinacion",
+          "atencion"
+        ]
+      }
+    },
+    "colecciones": {
+      "description": "Filtro 10. 'rompehielos', 'campamento' y 'nocturnos' son añadidas. 'destacados': los juegos más clásicos que se juegan en España; su orden está en destacados.destacados del archivo.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "destacados",
+          "juegos-del-mundo",
+          "clasicos-del-patio",
+          "cumpleanos-fiestas",
+          "viaje-coche",
+          "rompehielos",
+          "campamento",
+          "nocturnos"
+        ]
+      }
+    },
+    "origen": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "lugar"
+      ],
+      "description": "De dónde viene el juego. popular-espanol: juego popular o tradicional de España (aunque se juegue en más sitios). otro-pais: tradicional de otro país. moderno: dinámica, juego de animación, escultismo o educación física sin tradición popular concreta.",
+      "properties": {
+        "tipo": {
+          "enum": [
+            "popular-espanol",
+            "otro-pais",
+            "moderno"
+          ]
+        },
+        "lugar": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "País o región; null en los juegos modernos."
+        }
+      }
+    },
+    "pasos": {
+      "description": "Ficha en 3 pasos, con lenguaje para niños.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preparacion",
+        "comoSeJuega",
+        "comoSeGana"
+      ],
+      "properties": {
+        "preparacion": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "comoSeJuega": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "comoSeGana": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "variantes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "herramientas": {
+      "description": "Asistente en directo que se ofrece dentro de la ficha.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "turnos",
+          "marcador",
+          "sorteo",
+          "temporizador"
+        ]
+      }
+    },
+    "requiereAdulto": {
+      "type": "boolean"
+    },
+    "seguridad": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Juegolín",
+    "slug": "juegolin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#F5EDDB",
+    "android": {
+      "package": "com.churrufli.juegolin",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#F5EDDB",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#F5EDDB"
+        }
+      ],
+      "expo-font",
+      "./plugins/with-release-signing"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png",
+      "name": "Juegolín",
+      "shortName": "Juegolín",
+      "description": "Ayuda y dinamiza el juego para niños y jóvenes. Un cuaderno de juegos de siempre.",
+      "lang": "es",
+      "backgroundColor": "#F5EDDB",
+      "themeColor": "#F5EDDB"
+    },
+    "experiments": {
+      "baseUrl": "/juegolin"
+    }
+  }
+}

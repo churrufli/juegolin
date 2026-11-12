@@ -1,0 +1,227 @@
+{
+  "ataque-bandera": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Divide el terreno en dos campos con una línea, uno por equipo.",
+      "Cada equipo esconde su bandera en su campo y marca una cárcel.",
+      "Cruza al campo rival a por su bandera. Si te tocan allí, vas a su cárcel."
+    ]
+  },
+  "balon-prisionero": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Divide un campo en dos mitades con una línea, un campo por equipo.",
+      "Detrás de cada campo, marca la zona de prisioneros del equipo contrario.",
+      "Lanza a los rivales sin salir de tu campo. A quien le das, pasa a la zona de prisioneros."
+    ]
+  },
+  "bolos": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Coloca los bolos en triángulo.",
+      "Marca una línea de tiro a unos pasos.",
+      "Haz rodar la bola: dos tiradas por turno. Cuenta los que caen y vuelve a ponerlos."
+    ]
+  },
+  "bulldog": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca dos líneas de casa, una en cada extremo del campo.",
+      "Todos en una casa; el bulldog, en el centro.",
+      "Cuando grita «¡Bulldog!», todos cruzan. A quien pilla, se queda y ayuda."
+    ]
+  },
+  "caliche": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Pon de pie un palo corto con una moneda encima: es el caliche.",
+      "Marca una raya de tiro a varios pasos.",
+      "Lanza tu piedra para derribarlo. Gana punto la piedra que quede más cerca de la moneda."
+    ]
+  },
+  "campo-de-minas": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja una cuadrícula en el suelo, por ejemplo de 5 por 6 casillas.",
+      "Quien dirige apunta en secreto un camino seguro de un lado a otro.",
+      "Avanza casilla a casilla. Si pisas una mina, «¡Bum!», y le toca al otro equipo."
+    ]
+  },
+  "canicas": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja un círculo de medio metro en tierra y una raya de tiro a unos pasos.",
+      "Cada jugador pone 3 a 5 canicas dentro del círculo.",
+      "Desde la raya, tira con el pulgar. Las canicas que saques del círculo son tuyas."
+    ]
+  },
+  "chapas": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja con tiza un circuito ancho con curvas y rectas, de dos rayas paralelas.",
+      "Marca la salida y la meta con una raya y pon todas las chapas en la salida.",
+      "Por turnos, un golpe de dedo cada uno. Si la chapa se sale, vuelve a donde estaba."
+    ]
+  },
+  "cinco-islas": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Marca cinco islas en el suelo con aros, cuerdas o tiza, y ponles nombre.",
+      "Todos caminan por el espacio entre las islas.",
+      "Cuando se hunde una isla, corre a otra. Cada ronda desaparece una."
+    ]
+  },
+  "circulos-que-encogen": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja o haz con cuerdas varios círculos, de mayor a menor.",
+      "A la señal, todos se meten en el más grande.",
+      "Pasad al siguiente, más pequeño. ¿En cuál cabéis todavía?"
+    ]
+  },
+  "cruzar-la-linea": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca una meta de unos 10 pasos de ancho con una luz en cada esquina.",
+      "Los guardias, con linterna, se reparten por el terreno.",
+      "Los demás salen de lejos y llegan a la meta sin que los alumbren."
+    ]
+  },
+  "cuatro-esquinas": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca cuatro esquinas con árboles, aros o piedras.",
+      "Uno en cada esquina y quien la liga en el centro.",
+      "Al grito de «¡Cambio!», todos corren a otra esquina. El del centro intenta quedarse una."
+    ]
+  },
+  "el-coleccionista": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja un círculo grande en el centro y pon dentro 8 o 10 objetos.",
+      "Cada equipo, detrás de una línea en un extremo.",
+      "A la señal, sacad objetos del círculo sin pisar dentro. Os podéis sujetar unos a otros."
+    ]
+  },
+  "el-gua": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Haz un hoyo pequeño en la tierra: es el gua.",
+      "Marca una raya a unos pasos. Desde ahí, cada uno tira para ver quién empieza.",
+      "Mete tu canica en el gua y después intenta dar a las de los demás."
+    ]
+  },
+  "girar-y-girar": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja un círculo grande y divídelo en 12 partes, como una pizza.",
+      "Escribe un número de puntos en cada parte.",
+      "Con los ojos tapados, giras cuatro veces en el centro y das hasta cuatro pasos. Sumas los puntos de donde te paras."
+    ]
+  },
+  "gol-al-circulo": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Pinta en el suelo un círculo de dos pasos.",
+      "Pon la pelota a unos metros.",
+      "Tres chuts por turno: punto si la pelota se para dentro."
+    ]
+  },
+  "herradura": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Clava una estaca en el suelo.",
+      "Marca una raya de tiro a varios pasos. Cada uno tiene dos herraduras o aros.",
+      "Lanza a la estaca: si la rodea, 3 puntos; si queda a un palmo, 1 punto."
+    ]
+  },
+  "kabaddi": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Divide un campo en dos con una línea, un campo por equipo.",
+      "Un atacante entra en el campo rival diciendo «kabaddi, kabaddi…» sin tomar aire.",
+      "Toca a alguien y vuelve a tu campo antes de quedarte sin aire."
+    ]
+  },
+  "mamba": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca un cuadrado grande: nadie puede salir de él.",
+      "Uno es la mamba. Solo pilla la cabeza.",
+      "Cada tocado se agarra a la cintura del último y la serpiente crece. No se puede cruzar."
+    ]
+  },
+  "panuelo": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca dos líneas a unos 10 pasos, una por equipo, y repartid números en secreto.",
+      "Quien lo lleva se pone en medio con el brazo estirado y el pañuelo.",
+      "Dice un número. Los dos que lo tienen corren a por el pañuelo y vuelven a su línea."
+    ]
+  },
+  "petanca": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja un círculo pequeño: desde ahí se lanza.",
+      "Lanza el boliche, la bola pequeña, a unos pasos.",
+      "Por turnos, lanza tus bolas lo más cerca posible del boliche."
+    ]
+  },
+  "rayuela": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja con tiza diez casillas como en el dibujo: sueltas y por parejas, y el 10 en forma de cielo.",
+      "Desde la raya, lanza la piedra a la casilla que te toca (la 1 en tu primer turno).",
+      "Recorre todo a la pata coja; en las parejas pones un pie en cada casilla. Salta la casilla de la piedra.",
+      "En el cielo das la vuelta, y al volver recoges la piedra sin apoyar el otro pie."
+    ]
+  },
+  "robo-bordones": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Cada patrulla marca su base con un círculo en el suelo.",
+      "Clava de pie en el centro un palo con un pañuelo atado.",
+      "Defiende tu palo e intenta llevarte los de las otras patrullas."
+    ]
+  },
+  "tierra-cielo-mar": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja dos líneas paralelas en el suelo: a un lado tierra, al otro mar.",
+      "Todos de pie sobre la línea del medio, en fila.",
+      "«¡Tierra!» o «¡Mar!»: salta a ese lado. «¡Aire!»: salta hacia arriba."
+    ]
+  },
+  "torre-de-latas": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Apila latas en pirámide.",
+      "Los atacantes, detrás de una línea a unos 8 pasos. Los defensores, detrás de la torre.",
+      "Derriba la torre con la pelota. Los defensores la vuelven a montar mientras esquivan."
+    ]
+  },
+  "tregua-en-el-rio": {
+    "titulo": "Cómo se monta",
+    "pasos": [
+      "Marca un río con dos líneas paralelas a unos 2 pasos.",
+      "Los animales, en las orillas. Los cazadores, dentro del río. Alguien con una lámpara hace de sol.",
+      "Con la luz encendida hay tregua y se puede beber. Cuando se apaga, ¡a tu orilla!"
+    ]
+  },
+  "tres-en-raya-humano": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja en el suelo una cuadrícula grande de 3 por 3.",
+      "Cada equipo hace una fila a unos pasos, con tres pañuelos de su color.",
+      "Por turnos, corre, deja un pañuelo en una casilla y vuelve. Gana quien haga tres en raya."
+    ]
+  },
+  "ubuthi": {
+    "titulo": "Cómo se dibuja",
+    "pasos": [
+      "Dibuja un círculo grande en el suelo.",
+      "El ladrón, en el centro con un objeto. Los demás, fuera.",
+      "El ladrón dice un nombre: esa persona entra, le quita el objeto y sale sin que la pille."
+    ]
+  }
+}
