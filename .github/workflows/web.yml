@@ -1,11 +1,11 @@
 name: Web
 
-# Publica la versión web en GitHub Pages con cada subida a master.
+# Publica la versión web en GitHub Pages con cada subida a main.
 # Requiere: Settings → Pages → Source: GitHub Actions.
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:

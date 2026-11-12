@@ -50,7 +50,7 @@ npx expo start --web
 
 ## APK y web
 
-- **Web:** `.github/workflows/web.yml` la publica en GitHub Pages con cada cambio en `master`
+- **Web:** `.github/workflows/web.yml` la publica en GitHub Pages con cada cambio en `main`
   (Settings → Pages → Source: GitHub Actions).
 - **APK:** `.github/workflows/apk.yml`, se lanza a mano (Actions → APK Android → Run workflow). Compila arm64 y
   publica en Releases. Para firmar con clave propia, añade los secretos `ANDROID_KEYSTORE_BASE64`,
